@@ -21,8 +21,13 @@
 	// Remove "loading" class once the page has fully loaded.
 		window.onload = function() {
 			document.body.className = '';
-			const audio = document.getElementById("notifysound");
-			audio.play();
+			document.querySelector("body").addEventListener("mousedown" , e => {
+				const audio = document.getElementById("notifysound");
+				audio.play()
+			})
+			
+
+	
 		}
 
 	// Prevent scrolling on touch.
